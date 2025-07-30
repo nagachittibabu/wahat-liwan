@@ -267,9 +267,6 @@ body {
     width: 45%;
     height: 300px;
   }
-  .logo{
-    height: 70px ;
-  }
   .padding-down{
     padding: 0 0 20px 0;
   }
@@ -278,6 +275,9 @@ body {
   }
   .person_card{
     flex-direction: row;
+  }
+  .display-hidden{
+    display: none !important;
   }
 }
 
@@ -308,6 +308,9 @@ body {
   }
   .banner{
     height:280px;
+  }
+  .logo{
+    height: 50px ;
   }
   .banner_content{
     left:30;
@@ -375,9 +378,6 @@ body {
   }
   .promise-section{
     height: 310px !important;
-  }
-  .logo{
-    height: 90px ;
   }
   .textleft{
     text-align: left;
@@ -449,6 +449,11 @@ body {
   }
 }
 
+@media (width<320px){
+  .column{
+    flex-direction: column;
+  }
+}
 #promises{
   background-image: url("https://images.unsplash.com/photo-1702300731773-18e3365af5e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGJlYXV0aWZ1bCUyMGJ1aWxkaW5nfGVufDB8fDB8fHww");
   background-size: cover;

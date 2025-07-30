@@ -1,103 +1,76 @@
 import Image from "next/image";
 import React from "react";
 const Footer = () => {
-    return (
-        <footer className="w-full h-max xl:h-[350px] lg:h-[360px] md:h-[320px] sm:h-[350px] ">
-            <div className="w-full h-[520px] xl:h-[300px] lg:h-[310px] md:h-[270px] sm:h-[430px] flex flex-wrap xl:justify-evenly lg:justify-evenly
-             md:justify-start sm:justify-evenly items-center bg-blue-900 text-gray-100 xl:p-0 lg:p-0 md:p-0 sm:p-6 p-6 hmax">
-                <div className="w-1/2 xl:w-1/5 lg:w-1/5 md:w-1/4 sm:w-1/2 h-1/2 xl:h-full lg:h-full md:h-full sm:h-1/2  flex justify-center items-center width50 footer_section  footer_section ">  
-                    <div className="w-[80%] xl:w-3/4 lg:w-full md:w-full sm:w-[80%]  h-3/4 padding-down ">
-                    <div className="w-full h-[25%]  flex justify-center  items-start relative logo ">
-                        <Image src="/images/companylogo.png" alt="" fill className="object-contain "/>
-                    </div>
-                    </div>
-                </div>
-                <div className=" w-1/2 xl:w-1/5 lg:w-1/5 md:w-1/6 sm:w-1/2 h-1/2 xl:h-full lg:h-full md:h-full sm:h-1/2 flex  justify-center items-center width50 footer_section  ">
-                    <div className="w-[90%] xl:w-3/4 lg:w-full md:w-full sm:w-[80%]  h-3/4  flex flex-col space-y-5  text-center  padding-down ">
-                        <h1 className="font-bold text-white text-[13px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft">QUICK LINKS</h1>
-                        <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[11px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px]
-                        xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4">
-                            < li><a href="" className="hover:underline ">HOME</a></ li>
-                            < li><a href="" className="hover:underline ">ABOUT US</a></ li>
-                            < li><a href="" className="hover:underline ">GROUPS</a></ li>
-                            < li><a href="" className="hover:underline ">PROJECTS</a></ li>
-                        </ul>
-
-                    </div>
-
-
-                <div className="w-1/2 xl:w-1/5 lg:w-1/5 md:w-[30%] sm:w-1/2  h-1/2 xl:h-full lg:h-full md:h-full sm:h-1/2 flex flex-col justify-center items-center width50 footer_section  ">
-                    <div className="w-full xl:w-[90%] lg:w-full md:w-full sm:w-[80%]  h-3/4 space-y-2 xl:space-y-2 lg:space-y-2 md:space-y-2 sm:space-y-0 padding-down ">
-                        <h3 className="xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-bold text-white text-[13px] ">CONTACT US</h3>
-                        <div className="">
-                            
-                            <h4 className="font-semibold  text-[12px]  xl:text-[14px] lg:text-[14px] md:text-[13px] sm:text-[12px]"><i className='bx bx-current-location pr-1'></i>We Are Here</h4>
-                            <p className="xl:text-[12px] lg:text-[12px] md:text-[11px] sm:text-[10px] text-[10px] max-w-full  ">Big Four Building Flat
-                                No:112(1st Floor)
-
-                                P.O Box:67411,Al Nabba,
-                                Sharjah-U.A.E
-                            </p>
-                        </div>
-                        <div className="">
-                             <h4 className="font-semibold text-[13px]  xl:text-[14px] lg:text-[14px] md:text-[13px] sm:text-[12px]"><i className='bx bx-phone-call pr-1' ></i>CALL US</h4>
-                                    <a href="tel:+971-50975442" className="xl:text-[12px] lg:text-[12px] md:text-[11px] sm:text-[10px] text-[10px]   hover:underline">+971-50975442 <span>,</span></a>
-                                    <a href="tel:+971-556038444" className="xl:text-[12px] lg:text-[12px] md:text-[11px] sm:text-[10px] text-[10px]  hover:underline">+971-556038444</a>
-                        </div>
-                    <div className="" >
-                          <h4 className="font-semibold text-[13px]  xl:text-[14px] lg:text-[14px] md:text-[13px] sm:text-[12px]"><i className='bx bx-envelope pr-1' ></i>MAIL US</h4>
-                                    <a href="mailto:info@azservices.com" className="xl:text-[12px] lg:text-[12px] md:text-[11px] sm:text-[10px] text-[10px]   hover:underline ">info@azservices.com , </a>
-
-                                <a href="mailto:raju@azservices.com" className="xl:text-[12px] lg:text-[12px] md:text-[11px] sm:text-[10px] text-[10px] hover:underline">raju@azservices.com</a>
-                    </div>
-                    </div>
-
-        <div className="w-full sm:w-[45%] md:w-[25%] lg:w-[20%]">
-          <h3 className="text-sm sm:text-base font-bold mb-4">SPECIALIZATION IN</h3>
-          <ul className="space-y-2 text-xs sm:text-sm">
-            <li><a href="#" className="hover:underline">MECHANICAL</a></li>
-            <li><a href="#" className="hover:underline">PLUMBING</a></li>
-            <li><a href="#" className="hover:underline">ELECTRICAL</a></li>
-            <li><a href="#" className="hover:underline">PRECAST</a></li>
-          </ul>
+  return (
+    <footer className="w-full  h-max xl:h-[330px] lg:h-[300px] md:h-[280px] sm:h-[470px] ">
+      <div className="w-full h-[500px] xl:h-[280px] lg:h-[250px] md:h-[230px] sm:h-[420px] flex flex-wrap xl:justify-evenly lg:justify-evenly md:justify-center sm:justify-evenly items-center bg-gradient-to-r from-blue-900 to-sky-900 text-gray-100 xl:p-0 lg:p-0 md:p-0 sm:p-6 p-4 hmax space-x-0 md:space-x-6">
+        <div className="w-1/2 xl:w-1/5 lg:w-1/5 md:w-1/4 sm:w-1/2 h-[40%] xl:h-full lg:h-full md:h-full sm:h-1/2  flex justify-center items-center width50 footer_section  footer_section ">
+          <div className="w-[80%] xl:w-3/4 lg:w-full md:w-full sm:w-[80%]  h-3/4 padding-down space-y-2">
+            <div className="w-full h-[40%] xl:h-1/4 lg:h-1/4 md:h-1/3 sm:h-1/3  flex justify-center  items-start relative logo">
+              <Image src="/images/companylogo.png" alt="" fill className="object-fill " />
+            </div>
+            <ul className="w-full flex items-center justify-center space-x-4 text-[20px] xl:text-[25px] lg:text-[24px] md:text-[23px] sm:text-[22px]">
+            <li className='bx bxl-twitter' ></li>
+            <li className='bx bxl-instagram' ></li>
+            <li className='bx bxl-whatsapp'></li>
+            <li className='bx bxl-facebook' ></li>
+            </ul>
+          </div>
         </div>
+        <div className=" w-1/2 xl:w-1/8 lg:w-1/8 md:w-1/6 sm:w-1/2 h-[40%] xl:h-full lg:h-full md:h-full sm:h-1/2 flex  justify-center items-center width50 footer_section  ">
+          <div className="w-[90%] xl:w-full lg:w-full md:w-full sm:w-[80%]  h-3/4  flex flex-col space-y-5  text-center  padding-down ">
+            <h1 className="font-bold text-white text-[13px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft">QUICK LINKS</h1>
+            <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[11px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px] xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4">
+              < li><a href="" className="hover:underline ">HOME</a></ li>
+              < li><a href="" className="hover:underline ">ABOUT US</a></ li>
+              < li><a href="" className="hover:underline ">GROUPS</a></ li>
+              < li><a href="" className="hover:underline ">PROJECTS</a></ li>
+            </ul>
 
-        <div className="w-full sm:w-[45%] md:w-[40%] lg:w-[25%] space-y-4 text-xs sm:text-sm">
-          <h3 className="text-sm sm:text-base font-bold">CONTACT US</h3>
-
-          <div>
-            <h4 className="font-semibold">We Are Here</h4>
-            <p>Big Four Building, Flat No:112 (1st Floor),<br />P.O Box: 67411, Al Nabba, Sharjah - U.A.E</p>
           </div>
-
-          <div>
-            <h4 className="font-semibold">CALL US</h4>
-            <a href="tel:+971-50975442" className="hover:underline block">+971-50975442</a>
-            <a href="tel:+971-556038444" className="hover:underline block">+971-556038444</a>
+        </div>
+        <div className=" w-1/2 xl:w-1/8 lg:w-1/8 md:w-1/6 sm:w-1/2 h-1/2 xl:h-full lg:h-full md:h-full sm:h-1/2 flex  justify-center items-start xl:items-center lg:items-center md:items-center sm:items-start width50 footer_section  ">
+          <div className="w-[90%] xl:w-full lg:w-full md:w-full sm:w-[80%]  h-3/4  flex flex-col space-y-5  text-center  padding-down ">
+            <h3 className="font-bold text-white text-[13px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft">SPECIALIZATION IN</h3>
+            <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[11px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px] xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4 ">
+              <li><a href="#" className="hover:underline">MECHANICAL</a></li>
+              <li><a href="#" className="hover:underline">PLUMBING</a></li>
+              <li><a href="#" className="hover:underline">ELECTRICAL</a></li>
+            </ul>
           </div>
+        </div>
+        <div className="w-1/2 xl:w-1/5 lg:w-1/5 md:w-[30%] sm:w-1/2  h-1/2 xl:h-full lg:h-full md:h-full sm:h-1/2 flex flex-col justify-center items-center xl:items-center lg:items-center md:items-center sm:items-center  footer_section ">
+          <div className="w-[90%] xl:w-3/4 lg:w-full md:w-full sm:w-[80%] h-full xl:h-3/4 lg:h-3/4 md:h-3/4 sm:h-full flex flex-col space-y-2  text-center  padding-down text-left">
+            <h3 className="font-bold text-white text-[13px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft">CONTACT US</h3>
 
-          <div>
-            <h4 className="font-semibold">MAIL US</h4>
-            <a href="mailto:info@petraoasis.com" className="hover:underline block">info@petraoasis.com</a>
-            <a href="mailto:raju@petraoasis.com" className="hover:underline block">raju@petraoasis.com</a>
+            <div>
+              <h4 className="font-semibold text-[14px]  "><i className='pr-2 bx bx-current-location'></i>We Are Here</h4>
+              <p className="text-[11px]">Big Four Building, Flat No:112 (1st Floor),<br />P.O Box: 67411, Al Nabba, Sharjah - U.A.E</p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-[14px]"><i className='pr-2 bx bxs-phone-call' ></i>CALL US</h4>
+              <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-row text-[11px]">
+              <a href="tel:+971-50975442" className="hover:underline block ">+971-50975442,</a>
+              <a href="tel:+971-556038444" className="hover:underline block ">+971-556038444</a>
+              </div>
+            </div>
+            <div >
+            <h4 className="font-semibold text-[14px]"><i className='pr-2 bx bxs-envelope' ></i>MAIL US</h4>
+            <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row sm:flex-row text-[11px]">
+              <a href="mailto:info@petraoasis.com" className="hover:underline block ">info@petraoasis.com,</a>
+              <a href="mailto:raju@petraoasis.com" className="hover:underline block text-[12px]">raju@petraoasis.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="bg-orange-400 text-black text-xs sm:text-sm text-center py-3 px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
-        <p>&copy; All rights reserved.</p>
-        <p>Powered by </p>
+      <div className="w-full h-[50px] bg-green-200 flex justify-around  items-center xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-semibold text-[10px]">
+        <p className="text-center">&copy;copyright2025</p>
+        <p>All rights reserved to G.Naga chittibabu</p>
       </div>
     </footer>
-  );
-};
-
-            <div className="w-full h-[50px] bg-orange-400 flex justify-around  items-center xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-semibold text-[10px]">
-             <p className="text-center">&copy;copyright2025</p>
-             <p>All rights reserved to G.Naga chittibabu</p>
-            </div>
-        </footer>
-    )
+  )
 }
 export default Footer
 

@@ -21,12 +21,12 @@ export const ourpromises = [
 
 export const corevalues = [
     {
-        'image': '/target.png',
+        'image': '/images/mission.png',
         'title': 'Our Mission',
         'about': 'Our mission is that with our credibility, commitment, quality, cost efficiency, capability and financial soundness, with abundant resources of highly skilled and self-motivated engineers and staff make us a perfect choice for solving any kind of electro-mechanical work'
     },
     {
-        'image': '/target.png',
+        'image': '/images/house.png',
         'title': 'Residential',
         'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.',
         'points': [
@@ -38,12 +38,12 @@ export const corevalues = [
         ]
     },
     {
-        'image': '/target.png',
+        'image': '/images/experience.jpeg',
         'title': 'Experience',
-        'about': 'We have 10+ years of the Experience in Residential,commercial,industrial Construnctions and other constructions.'
+        'about': 'We have 10+ years of the Experience in Residential , commercial , industrial Construnctions and other constructions.'
     },
     {
-        'image': '/target.png',
+        'image': '/images/safety.png',
         'title': 'Safety',
         'about': 'AZ services Tech Cont. Safety Culture is Great and We Follow All the Rules, that’s the reason we have no safety incidents in our entire tenure. “Safety First” for all employees is embedded in ourcompany culture from top to bottom.'
     },
