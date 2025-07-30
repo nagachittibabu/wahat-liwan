@@ -1,43 +1,53 @@
-"use client";
+'use client';
 
-import React, { useEffect } from "react";
-import 'aos/dist/aos.css';
-import Aos from 'aos'
-import { completedprojects } from "../export";
-import ProjectCard from "../cards/projectCard";
+import React from 'react';
+import Image from 'next/image';
+import { completedProjects } from '../export';
 
-const CompletedProjectSection = () => {
-  useEffect(() => {
-    Aos.init({
-      offset: 200,
-      duration: 500,
-      easing: "ease-in-sine",
-    });
-  }, []);
-
+const CompletedProjects: React.FC = () => {
   return (
-    <section
-      id="projects"
-      className="w-full flex flex-col items-center justify-center bg-cover bg-center py-20 px-6 sm:px-10 lg:px-20"
-    >
-      <h1
-        data-aos="zoom-in"
-        className="text-2xl sm:text-3xl lg:text-4xl text-black text-center font-bold pb-10"
-      >
-      Completed Projects
-      </h1>
+    <div className="w-full px-4 sm:px-6 lg:px-20 py-12 bg-white">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">
+        Completed Projects
+      </h2>
 
-      <div
-        data-aos="zoom-in"
-        data-aos-delay="200"
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl"
-      >
-        {completedprojects .map((item) => (
-          <ProjectCard imageurl={item.image} title={item.title} description={item.about} key={item.title}/>
-        ))}
-      </div>
-    </section>
+      {completedProjects.map((group, index) => (
+        <div key={index} className="mb-16">
+          <h3 className="text-3xl font-semibold text-center text-black mb-10">
+            {group.company}
+          </h3>
+
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            {group.projects.map((project, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:scale-105 p-4 flex flex-col items-center justify-between h-[280px] sm:h-[300px] md:h-[320px] lg:h-[340px] xl:h-[360px]"
+              >
+                 <div className="w-full h-2/3 flex items-center justify-center">
+                  <div className="relative w-full h-full max-h-40">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      layout="fill"
+                      objectFit="contain"
+                      className="rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                <div className="w-full h-1/3">
+                  <p className="xl:text-[18px] lg:text-[15px] md:text-[14px]  sm:text-[13px] font-semibold text-black text-center font16">PROJECT</p>
+                  <h4 className="text-10px leading-[13px] xl:leading-[15px] lg:leading-[13px] md:leading-[12px] sm:leading-[10px] xl:text-[14px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-center text-gray-600 font12 mt-2">
+                    {project.title}
+                  </h4>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 
-export default CompletedProjectSection;
+export default CompletedProjects;

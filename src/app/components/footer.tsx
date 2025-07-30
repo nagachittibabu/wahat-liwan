@@ -25,19 +25,6 @@ const Footer = () => {
 
                     </div>
 
-                </div>
-                <div className="w-1/2 xl:w-1/5 lg:w-1/5 md:w-1/4 sm:w-1/2 h-1/2 xl:h-full lg:h-full md:h-full sm:h-1/2 flex flex-col justify-center items-center width50  footer_section  ">
-                <div className="w-[90%] xl:w-3/4 lg:w-full md:w-full sm:w-[80%]  h-3/4  flex flex-col space-y-5  text-center padding-down  ">
-                <h1 className="font-bold text-white text-[13px]  xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px]  textleft">SPECIALIZATION IN</h1>                       
-                    <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[10px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px]
-                        xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4">
-                            < li><a href="" className="hover:underline ">MECHANICAL SPECILIZATION</a></ li>
-                            < li><a href="" className="hover:underline ">PLUMBING SPECILIZATION</a></ li>
-                            < li><a href="" className="hover:underline ">ELECTRICAL SPECILIZATION</a></ li>
-                            < li><a href="" className="hover:underline ">PRECAST SPECILIZATION</a></ li>
-                        </ul>
-                </div>
-                </div>
 
                 <div className="w-1/2 xl:w-1/5 lg:w-1/5 md:w-[30%] sm:w-1/2  h-1/2 xl:h-full lg:h-full md:h-full sm:h-1/2 flex flex-col justify-center items-center width50 footer_section  ">
                     <div className="w-full xl:w-[90%] lg:w-full md:w-full sm:w-[80%]  h-3/4 space-y-2 xl:space-y-2 lg:space-y-2 md:space-y-2 sm:space-y-0 padding-down ">
@@ -65,10 +52,45 @@ const Footer = () => {
                     </div>
                     </div>
 
-                </div>
+        <div className="w-full sm:w-[45%] md:w-[25%] lg:w-[20%]">
+          <h3 className="text-sm sm:text-base font-bold mb-4">SPECIALIZATION IN</h3>
+          <ul className="space-y-2 text-xs sm:text-sm">
+            <li><a href="#" className="hover:underline">MECHANICAL</a></li>
+            <li><a href="#" className="hover:underline">PLUMBING</a></li>
+            <li><a href="#" className="hover:underline">ELECTRICAL</a></li>
+            <li><a href="#" className="hover:underline">PRECAST</a></li>
+          </ul>
+        </div>
 
+        <div className="w-full sm:w-[45%] md:w-[40%] lg:w-[25%] space-y-4 text-xs sm:text-sm">
+          <h3 className="text-sm sm:text-base font-bold">CONTACT US</h3>
 
-            </div>
+          <div>
+            <h4 className="font-semibold">We Are Here</h4>
+            <p>Big Four Building, Flat No:112 (1st Floor),<br />P.O Box: 67411, Al Nabba, Sharjah - U.A.E</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold">CALL US</h4>
+            <a href="tel:+971-50975442" className="hover:underline block">+971-50975442</a>
+            <a href="tel:+971-556038444" className="hover:underline block">+971-556038444</a>
+          </div>
+
+          <div>
+            <h4 className="font-semibold">MAIL US</h4>
+            <a href="mailto:info@petraoasis.com" className="hover:underline block">info@petraoasis.com</a>
+            <a href="mailto:raju@petraoasis.com" className="hover:underline block">raju@petraoasis.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-orange-400 text-black text-xs sm:text-sm text-center py-3 px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <p>&copy; All rights reserved.</p>
+        <p>Powered by </p>
+      </div>
+    </footer>
+  );
+};
 
             <div className="w-full h-[50px] bg-orange-400 flex justify-around  items-center xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft font-semibold text-[10px]">
              <p className="text-center">&copy;copyright2025</p>
@@ -78,6 +100,7 @@ const Footer = () => {
     )
 }
 export default Footer
+
 
 
 

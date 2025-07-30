@@ -6,8 +6,10 @@ interface CoreValueCardProps {
 
 const CommitmentCard: React.FC<CoreValueCardProps> = ({ description }) => {
   return (
-    <div className="flex flex-col items-center bg-white rounded-2xl shadow-xl p-6 sm:p-8 transition-transform duration-300 ">
-      <p className="text-center text-sm mb-4 text-gray-700 text-base sm:text-lg">{description}</p>
+    <div className="flex flex-col items-center bg-white rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 transition-transform duration-300 hover:scale-105">
+      <p className="text-center text-sm sm:text-base md:text-lg text-gray-700">
+        {description}
+      </p>
     </div>
   );
 };

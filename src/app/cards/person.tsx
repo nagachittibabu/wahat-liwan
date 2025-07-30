@@ -14,7 +14,7 @@ const Person: React.FC<PersonCardProps> = ({ imageurl, name, specialization }) =
           <Image src={imageurl} alt="person image" fill className='object-fit' />
         </div>
       </div>
-      <div className='w-full h-[20%] flex flex-col '>
+      <div className='w-full h-[40%] flex flex-col  '>
         <h1 className='text-[18px] font-bold text-center font14'>{name}</h1>
         <h2 className='text-[13px] text-center font10'>{specialization}</h2>
       </div>

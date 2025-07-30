@@ -21,6 +21,7 @@ const AboutUs = () => {
         </h2>
 
         <div className="flex flex-col gap-20  w-full h-max ">
+
           {about.map((item, index) => (
             <div
               key={item.title}
@@ -39,6 +40,7 @@ const AboutUs = () => {
                 <p className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[16px] xl:text-[18px] text-gray-700">
                   {item.para2}
                 </p>
+
               </div>
 
               {item.image && (

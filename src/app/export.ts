@@ -216,12 +216,108 @@ export const commitmentcards = [
     }
 ]
 
-export const completedprojects = [
-    {
-        'image': '/images/commercial-building.png',
-        'title': 'Project',
-        'about': 'Palm Tower @NAKHEEL MALL.'
 
+export interface Project {
+    image: string;
+    title: string;
+}
+
+export interface CompanyProjects {
+    company: string;
+    projects: Project[];
+}
+
+export const completedProjects: CompanyProjects[] = [
+    {
+        company: "TROJAN CONSTRUCTION GROUP",
+        projects: [
+            { image: "/commitment.png", title: "AL MARYAH VISTA 1&2" },
+            { image: "/commitment.png", title: "LANDSCAPING (IMPERIAL 3&4)" },
+            { image: "/commitment.png", title: "COMMUNITY PARK" },
+            { image: "/commitment.png", title: "DAMAC MERANO TOWER" },
+        ],
     },
-   
-]
+    {
+        company: "ROYAL RITZ INTERIORS & MEP",
+        projects: [
+            { image: "/commitment.png", title: "Sheikh Zayed Cricket Stadium" },
+            { image: "/commitment.png", title: "Palm Jumeirah Villa Project" },
+        ],
+    },
+    {
+        company: "MAG INTERNATIONAL ELECTROMECHANICAL WORKS",
+        projects: [
+            { image: "/commitment.png", title: "INTERNATIONAL TOWER" },
+            { image: "/commitment.png", title: "LAGOON VILLAS" },
+            { image: "/commitment.png", title: "DUBAI CREEK" },
+            { image: "/commitment.png", title: "SKYCOURTS TOWER" },
+            { image: "/commitment.png", title: "LANDMARK VIEWS RESIDENTIAL COMPLEX" },
+        ],
+    },
+    {
+        company: "Gesco Ginco electrical & Sanitary contacting Co. LLC",
+        projects: [
+            { image: "/commitment.png", title: "Sharjah Oasis Mall" },
+            { image: "/commitment.png", title: "Maryam Island Development" },
+        ],
+    },
+    {
+        company: "Almoayyed Electromechanical Contracting",
+        projects: [
+            { image: "/commitment.png", title: "AL Wasal-Qusaia." },
+        ],
+    },
+    {
+        company: "Scale Electro-mechanical Works",
+        projects: [
+            { image: "/commitment.png", title: "2B+G+3 Floors+RF+TF On Plat No.2140909,Al Garhoud. Dubai, UAE." },
+            { image: "/commitment.png", title: "Jewel of the Creek, Dubai, UAE." },
+            { image: "/commitment.png", title: "G+1P+8TYP Floor 9 Staff Accommodation." },
+        ],
+    },
+    {
+        company: "Emt Electromechanical Woks LLC",
+        projects: [
+            { image: "/commitment.png", title: "The Address Residences Dubai Opera A2-A3 On Plot No 3456900, Duabi Downtown." },
+        ],
+    },
+    {
+        company: "Light moon",
+        projects: [
+            { image: "/commitment.png", title: "Sarab Villas at Al Jada,Sharjah U.A.E." },
+            { image: "/commitment.png", title: "R-1083 AL Qusais, Residential Development." },
+            { image: "/commitment.png", title: "Proposed G+1 Town House@HADAEQ Sheikh Mohammed Bin Rashid." },
+        ],
+    },
+    {
+        company: "Specon",
+        projects: [
+            { image: "/commitment.png", title: "The Royal Atlantis Resort and Residences(Packagaes M2 & M3)." },
+        ],
+    },
+    {
+        company: "Elemec electrical Contracting L.L.C",
+        projects: [
+            { 'image': "/commitment.png", title: "EKPC-3LONG Termexpansion." },
+            { image: "/commitment.png", title: "AL BARSHA, RESIDENTIAL & COMMERCIAL BUILDING[2B+G+6 TYP ABDUL WAHID HASSAN MOHD.AL ROSTAMANI." },
+            { image: "/commitment.png", title: "AL MUHAISNAH RESIDANTIAL COMPLEX." },
+            { image: "/commitment.png", title: "Shopping Center & Residential Building (3B+G+M+4+2R) in Al Garhoud Dubai." },
+            { image: "/commitment.png", title: "Design & Construction of DH-0036 Beachfront Tower (1+B+G_36F+TC) at JBR-La Vie, Dubai." },
+            { image: "/commitment.png", title: "Main Construction works for Port De LA Mer (PDLM) Phase 4 Buildings (Building 1,2&3), Dubai" },
+
+        ],
+    },
+    {
+        company: "Verger Delporte u.a.e l.t.d",
+        projects: [
+            { image: "/commitment.png", title: "Verger Concrete Technology LLC" },
+        ],
+    },
+        {
+        company: "IHCC WE DESIGN & BUILD THE FUTURE",
+        projects: [
+            { image: "/commitment.png", title: "International Hospital Construction Co.Ltd" },
+        ],
+    },
+];
+
