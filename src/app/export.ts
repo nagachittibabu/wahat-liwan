@@ -1,8 +1,8 @@
 export const ourpromises = [
     {
-        'image': '/images/promise1.jpeg',
-        'title': 'Skilled Electricians for Every Project',
-        'description': 'We provide certified electricians for residential, commercial, and industrial projects. From wiring and panel installations to maintenance and troubleshooting, our team ensures safety, compliance, and precision.',
+        'image': '/images/promise1.png',
+        'title': 'Our Promise as a contractor is to build your project',
+        'description': 'The process of commercial building construction involves designing, planning, and constructing buildings intended for commercial use.These structures serve various purposes, such as retail stores, office buildings and educational institutions.',
         'label': 'Read More'
     },
     {
@@ -53,39 +53,39 @@ export const corevalues = [
 export const projects = [
     {
         'image': '/images/commercial-building.png',
-        'banner':'/images/commercialbanner.png',
+        'banner': '/images/commercialbanner.png',
         'title': 'Commercial',
         'about': 'We support commercial projects with skilled electricians and ducting technicians for retail spaces, office buildings. '
 
     },
     {
         'image': '/images/residential.png',
-        'banner':'/images/companybanner.png',
+        'banner': '/images/companybanner.png',
         'title': 'Residential',
         'about': 'From apartments to villas, we provide certified manpower for electrical wiring, DB dressing, and ducting solutions. .'
     },
     {
         'image': '/images/industrial.png',
-        'banner':'/images/industrailbanner.png',
+        'banner': '/images/industrailbanner.png',
         'title': 'Industrial',
         'about': 'Industrial sites demand precision and durability. We supply trained professionals for every    installations,'
     },
     {
         'image': '/images/educational.png',
-        'banner':'/images/educationalbanner.png',
+        'banner': '/images/educationalbanner.png',
         'title': 'Educational',
         'about': 'We provide skilled manpower for electrical and ducting installations in schools, colleges, and universities.'
 
     },
     {
         'image': '/images/hospital.png',
-        'banner':'/images/hospitalitybannner.png',
+        'banner': '/images/hospitalitybannner.png',
         'title': 'Hospitality',
         'about': ' Our team delivers expert ducting and electrical services that support guest comfort, operational efficiency, and safety.'
     },
     {
         'image': '/images/medical.png',
-        'banner':'/images/hospitalbanner.png',
+        'banner': '/images/hospitalbanner.png',
         'title': 'Medical',
         'about': ' We supply certified electricians and ducting specialists for hospitals and clinics, ensuring uninterrupted power, and clean airflow'
     }
@@ -151,9 +151,9 @@ export const services: Service[] = [
         ]
     },
     {
-        title: "Plumbing",
+        title: "Ducking",
         about: "Specialization",
-        image: "/plumbing.png",
+        image: "/ducking.png",
         points: [
             "Design & Installation of plumbing, drainage and sanitary systems",
             "Pump & Tank Installation",
@@ -319,7 +319,7 @@ export const completedProjects: CompanyProjects[] = [
             { image: "/commitment.png", title: "Verger Concrete Technology LLC" },
         ],
     },
-        {
+    {
         company: "IHCC WE DESIGN & BUILD THE FUTURE",
         projects: [
             { image: "/commitment.png", title: "International Hospital Construction Co.Ltd" },
@@ -327,3 +327,53 @@ export const completedProjects: CompanyProjects[] = [
     },
 ];
 
+export const ongoingProjects: CompanyProjects[] = [
+    {
+        company: "GRANADA EUROPE CONSTRUCTION LLC",
+        projects: [
+            { image: "/commitment.png", title: "AL MARYAH VISTA 1&2" },
+            { image: "/commitment.png", title: "LANDSCAPING (IMPERIAL 3&4)" },
+            { image: "/commitment.png", title: "COMMUNITY PARK" },
+            { image: "/commitment.png", title: "DAMAC MERANO TOWER" },
+        ],
+    },
+    {
+        company: "VERGER DELPORTE U.A.E LTD",
+        projects: [
+            { image: "/commitment.png", title: "Sheikh Zayed Cricket Stadium" },
+            { image: "/commitment.png", title: "Palm Jumeirah Villa Project" },
+        ],
+    },
+    {
+        company: "ABRAJ ELECTROMECHANICAL  WORK L.L.C",
+        projects: [
+            { image: "/commitment.png", title: "INTERNATIONAL TOWER" },
+            { image: "/commitment.png", title: "LAGOON VILLAS" },
+            { image: "/commitment.png", title: "DUBAI CREEK" },
+            { image: "/commitment.png", title: "SKYCOURTS TOWER" },
+            { image: "/commitment.png", title: "LANDMARK VIEWS RESIDENTIAL COMPLEX" },
+        ],
+    },
+    {
+        company: "SPECTRUM CUBE",
+        projects: [
+            { image: "/commitment.png", title: "Sharjah Oasis Mall" },
+            { image: "/commitment.png", title: "Maryam Island Development" },
+        ],
+    },
+    {
+        company: "MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C",
+        projects: [
+            { image: "/commitment.png", title: "AL Wasal-Qusaia." },
+        ],
+    },
+    {
+        company: "EMT ELECTROMECHNICAL WORKS L.L.C",
+        projects: [
+            { image: "/commitment.png", title: "2B+G+3 Floors+RF+TF On Plat No.2140909,Al Garhoud. Dubai, UAE." },
+            { image: "/commitment.png", title: "Jewel of the Creek, Dubai, UAE." },
+            { image: "/commitment.png", title: "G+1P+8TYP Floor 9 Staff Accommodation." },
+        ],
+    },
+
+];
