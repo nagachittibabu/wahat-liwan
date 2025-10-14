@@ -1,18 +1,18 @@
 export const ourpromises = [
     {
-        'image': '/promisecard1.png',
+        'image': '/images/promiseimage1.png',
         'title': 'Our Promise as a contractor is to build your project',
-        'description': 'The process of commercial building construction involves designing, planning, and constructing buildings intended for commercial use. These structures serve various purposes, such as retail stores, office buildings and educational institutions.',
+        'description': 'The process of commercial building construction involves designing, planning, and constructing buildings intended for commercial use.These structures serve various purposes, such as retail stores, office buildings and educational institutions.',
         'label': 'Read More'
     },
     {
-        'image': '/promisecard1.png',
+        'image': '/images/promiseimage2.png',
         'title': 'Professional Homes Constructions',
         'description': 'The construction process includes several stages: site selection and preparation, architectural design, engineering, material procurement, actual construction, and commissioning.',
         'label': 'Read More'
     },
     {
-        'image': '/promisecard1.png',
+        'image': '/images/promiseimage3.png',
         'title': 'Architecture Design',
         'description': 'Collaboration among professionals—such as architects, engineers, contractors, and subcontractors—is crucial to ensure compliance with local building codes and regulations.',
         'label': 'Read More'
@@ -21,13 +21,12 @@ export const ourpromises = [
 
 export const corevalues = [
     {
-        'image': '/target.png',
+        'image': '/images/mission.png',
         'title': 'Our Mission',
-        'about': 'Our mission is that with our credibility, commitment, quality, cost efficiency, capability and financial soundness, with abundant resources of highly skilled and self-motivated engineers and staff make us a perfect choice for solving any kind of electro-mechanical work requirements in major projects and our proven record of performance and credentials in the past years evidence our capability to endeavor any value projects.'
-
+        'about': 'Our mission is that with our credibility, commitment, quality, cost efficiency, capability and financial soundness, with abundant resources of highly skilled and self-motivated engineers and staff make us a perfect choice for solving any kind of electro-mechanical work'
     },
     {
-        'image': '/target.png',
+        'image': '/images/house.png',
         'title': 'Residential',
         'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.',
         'points': [
@@ -39,9 +38,14 @@ export const corevalues = [
         ]
     },
     {
-        'image': '/target.png',
+        'image': '/images/experience.jpeg',
+        'title': 'Experience',
+        'about': 'We have 10+ years of the Experience in Residential , commercial , industrial Construnctions and other constructions.'
+    },
+    {
+        'image': '/images/safety.png',
         'title': 'Safety',
-        'about': 'Petra Oasis Tech Cont. Safety Culture is Great and We Follow All the Rules, that’s the reason we have no safety incidents in our entire tenure. “Safety First” for all employees is embedded in our company culture from top to bottom.'
+        'about': 'Wahat Liwan Technical Services L.L.C Safety Culture is Great and We Follow All the Rules, that’s the reason we have no safety incidents in our entire tenure. “Safety First” for all employees is embedded in ourcompany culture from top to bottom.'
     },
 
 ]
@@ -49,36 +53,42 @@ export const corevalues = [
 export const projects = [
     {
         'image': '/images/commercial-building.png',
+        'banner': '/images/commercialbanner.png',
         'title': 'Commercial',
         'about': 'These structures serve various purposes, such as retail stores, office buildings, warehouses, hotels, hospitals, and educational institutions.'
 
     },
     {
         'image': '/images/residential.png',
+        'banner': '/images/companybanner.png',
         'title': 'Residential',
         'about': 'Residential construction involves building homes, apartments, and other dwellings. It’s a dynamic industry shaping our living spaces globally.'
     },
     {
         'image': '/images/industrial.png',
+        'banner': '/images/industrailbanner.png',
         'title': 'Industrial',
         'about': 'Industrial properties cater to manufacturing, warehousing, and logistics needs Examples: factories, distribution centers, and industrial parks.'
     },
     {
         'image': '/images/educational.png',
+        'banner': '/images/educationalbanner.png',
         'title': 'Educational',
         'about': 'Educational properties serve learning institutions. Examples: schools, colleges, and universities.'
 
     },
     {
         'image': '/images/hospital.png',
+        'banner': '/images/hospitalitybannner.png',
         'title': 'Hospitality',
         'about': 'Hospitality properties provide lodging, dining, and leisure services. Examples: hotels, restaurants, and resorts.'
     },
     {
         'image': '/images/medical.png',
+        'banner': '/images/hospitalbanner.png',
         'title': 'Medical',
         'about': 'Medical properties support healthcare services. Examples: hospitals, clinics, and medical office buildings.'
-    },
+    }
 ]
 
 export const contact = [
@@ -95,7 +105,7 @@ export const contact = [
     {
         'image': '/email.png',
         'title': 'Mail Us',
-        'about': 'info@petraoasis.com, Raju@petraoasis.com'
+        'about': 'info@wahatsiwa.in, wahatliwantechllc@gmail.com'
     }
 ]
 
@@ -103,18 +113,18 @@ export const contact = [
 export const Persons = [
     {
         "imageurl": "/images/construction-banner.png",
-        "name": "Er. A K Ayube",
+        "name": "R.Rakesh",
         "specialization": "B.tech(Civil),M.tech(structure)"
     },
     {
         "imageurl": "/images/construction-banner.png",
-        "name": "Er. A K ",
-        "specialization": "B.tech(Civil),M.tech(structure)"
+        "name": "M.Nagesh ",
+        "specialization": "B.tech(Electrical),M.Tech(power Systems)"
     },
     {
         "imageurl": "/images/construction-banner.png",
-        "name": "Er. A K A",
-        "specialization": "B.tech(Civil),M.tech(structure)"
+        "name": "E.Sharma",
+        "specialization": "B.tech(Mechanical),M.tech(Thermel Engineering)"
     }
 ]
 
@@ -141,9 +151,9 @@ export const services: Service[] = [
         ]
     },
     {
-        title: "Plumbing",
+        title: "Ducking",
         about: "Specialization",
-        image: "/plumbing.png",
+        image: "/ducking.png",
         points: [
             "Design & Installation of plumbing, drainage and sanitary systems",
             "Pump & Tank Installation",
@@ -174,10 +184,10 @@ export const services: Service[] = [
 
 export const about = [
     {
-        "title": "Introduction Of Petra Oasis Technical Cont.",
+        "title": "Introduction Of Wahat Liwan Tech Services LLC ",
         "image": "/about.png",
-        "para1": "Petra Oasis Technical Cont. is established in 2015 at Sharjah, United Arab Emirates. Company is one of the leading MEP & Civil Contracting company in the region with a wide reputation and excellence.",
-        "para2": "Timeliness, efficiency, and value-per-square-foot are the focus of PETRA OASIS’s efforts, and we pride ourselves on offering the highest levels of service and attention to detail, keeping you updated with regular progress reports every step of the way, thereby ensuring that your project is completed on time and within budget., and value-per-square-foot are the focus of B",
+        "para1": "Wahat Liwan Tech Services LLC  is established in 2015 at Sharjah, United Arab Emirates. Company is one of the leading MEP & Civil Contracting company in the region with a wide reputation and excellence.",
+        "para2": "Timeliness, efficiency, and value-per-square-foot are the focus of WAHAT LIWAN TECH SERVICES LLC’s efforts, and we pride ourselves on offering the highest levels of service and attention to detail, keeping you updated with regular progress reports every step of the way, thereby ensuring that your project is completed on time and within budget., and value-per-square-foot are the focus of B",
         "para3": "To provide innovative and world class solutions through the best people, processes and systems with a commitment to partnership and exceptional services and we pride on offer your project is completed on time and within budget."
     }
 ]
@@ -309,7 +319,7 @@ export const completedProjects: CompanyProjects[] = [
             { image: "/commitment.png", title: "Verger Concrete Technology LLC" },
         ],
     },
-        {
+    {
         company: "IHCC WE DESIGN & BUILD THE FUTURE",
         projects: [
             { image: "/commitment.png", title: "International Hospital Construction Co.Ltd" },
@@ -317,3 +327,53 @@ export const completedProjects: CompanyProjects[] = [
     },
 ];
 
+export const ongoingProjects: CompanyProjects[] = [
+    {
+        company: "GRANADA EUROPE CONSTRUCTION LLC",
+        projects: [
+            { image: "/commitment.png", title: "AL MARYAH VISTA 1&2" },
+            { image: "/commitment.png", title: "LANDSCAPING (IMPERIAL 3&4)" },
+            { image: "/commitment.png", title: "COMMUNITY PARK" },
+            { image: "/commitment.png", title: "DAMAC MERANO TOWER" },
+        ],
+    },
+    {
+        company: "VERGER DELPORTE U.A.E LTD",
+        projects: [
+            { image: "/commitment.png", title: "Sheikh Zayed Cricket Stadium" },
+            { image: "/commitment.png", title: "Palm Jumeirah Villa Project" },
+        ],
+    },
+    {
+        company: "ABRAJ ELECTROMECHANICAL  WORK L.L.C",
+        projects: [
+            { image: "/commitment.png", title: "INTERNATIONAL TOWER" },
+            { image: "/commitment.png", title: "LAGOON VILLAS" },
+            { image: "/commitment.png", title: "DUBAI CREEK" },
+            { image: "/commitment.png", title: "SKYCOURTS TOWER" },
+            { image: "/commitment.png", title: "LANDMARK VIEWS RESIDENTIAL COMPLEX" },
+        ],
+    },
+    {
+        company: "SPECTRUM CUBE",
+        projects: [
+            { image: "/commitment.png", title: "Sharjah Oasis Mall" },
+            { image: "/commitment.png", title: "Maryam Island Development" },
+        ],
+    },
+    {
+        company: "MAG INTERNATIONAL ELECTROMECHANICAL WORK L.L.C",
+        projects: [
+            { image: "/commitment.png", title: "AL Wasal-Qusaia." },
+        ],
+    },
+    {
+        company: "EMT ELECTROMECHNICAL WORKS L.L.C",
+        projects: [
+            { image: "/commitment.png", title: "2B+G+3 Floors+RF+TF On Plat No.2140909,Al Garhoud. Dubai, UAE." },
+            { image: "/commitment.png", title: "Jewel of the Creek, Dubai, UAE." },
+            { image: "/commitment.png", title: "G+1P+8TYP Floor 9 Staff Accommodation." },
+        ],
+    },
+
+];
