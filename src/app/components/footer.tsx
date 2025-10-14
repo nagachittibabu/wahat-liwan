@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="font-bold text-white text-[13px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[14px] textleft">SPECIALIZATION IN</h3>
             <ul className="flex  flex-col space-y-5 text-gray-100 textleft text-[11px] xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px] xl:space-y-5 lg:space-y-4 md:space-y-3 sm:space-y-4 ">
               <li><a href="#" className="hover:underline">MECHANICAL</a></li>
-              <li><a href="#" className="hover:underline">PLUMBING</a></li>
+              <li><a href="#" className="hover:underline">DUCTING</a></li>
               <li><a href="#" className="hover:underline">ELECTRICAL</a></li>
             </ul>
           </div>
