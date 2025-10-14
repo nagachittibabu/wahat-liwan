@@ -63,7 +63,6 @@ const Header: React.FC = () => {
 
   return (
     <header className="w-full h-[100px] flex justify-center bg-transparent absolute left-0 top-0 z-50 text-white">
-      {/* Logo */}
       <div className="w-1/3 h-full flex items-center justify-center companylogo">
         <Link
           href="/"
@@ -71,16 +70,25 @@ const Header: React.FC = () => {
         >
           <Image src="/images/logo.png" alt="Company Logo" fill className="object-fit" />
         </Link>
+        <div className='slide-right h-[80%] xl:h-[60%] lg:h-[60%] md:h-[60%] sm:h-[60%] w-[60%] '>
+                <div className='w-max  xl:space-y-2 lg:space-y-2 md:space-1.5 sm:space-y-1'>
+                  <h1 className='h-[32px] xl:h-[45px] lg:h-[42px] md:h-[34px] sm:h-[29px] text-[26px] xl:text-[45px] lg:text-[38px] md:text-[32px] sm:text-[25px] font-bold  '><span className="bg-gradient-to-r from-green-500 via-green-00 to-green-600  bg-clip-text text-transparent ">
+                    WAHAT LIWAN
+                  </span></h1>
+                  <h2 className='w-full text-right xl:text-[17px] 
+                  lg:text-[12px] md:text-[11px] sm:text-[8px] text-[7px] font-bold '><span className="bg-gradient-to-r from-gray-400  to-gray-400 bg-clip-text text-transparent ">
+                     TECHNICAL SERVICES L.L.C
+                  </span></h2>
+                </div>
+              </div>
       </div>
 
-      {/* Menu button (Mobile only) */}
       {isMobile && menuButton && (
         <button onClick={menuClick} className="menu_button cursor-pointer">
           <i className="bx bx-menu"></i>
         </button>
       )}
 
-      {/* Navbar */}
       {isNavVisible && (
         <nav
           id="navbar"
@@ -104,7 +112,6 @@ const Header: React.FC = () => {
               <Link href="/about-us">ABOUT US</Link>
             </li>
 
-            {/* Projects Dropdown */}
             <li
               className="h-full flex justify-center items-center"
               onMouseLeave={() => setViewProjects(false)}
@@ -127,7 +134,6 @@ const Header: React.FC = () => {
               </div>
             </li>
 
-            {/* Services */}
             <li
               className={`h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400 ${
                 pathname === "/services"
@@ -138,7 +144,6 @@ const Header: React.FC = () => {
               <Link href="/services">SERVICES</Link>
             </li>
 
-            {/* More Dropdown */}
             <li
               className="h-full flex justify-center items-center hover:underline hover:underline-offset-[12px] hover:text-green-400"
               onMouseLeave={() => setMoreDetails(false)}
@@ -164,7 +169,6 @@ const Header: React.FC = () => {
               </div>
             </li>
 
-            {/* Contact Button */}
             <button className="w-[160px] p-2 px-6 rounded-2xl flex justify-center items-center text-black bg-green-500 font-bold">
               <Link href="/contact-us">GET IN TOUCH</Link>
             </button>
