@@ -16,17 +16,15 @@ const ContactPage = () => {
     e.preventDefault();
   
     if (!name || !email || !phone || !message) {
-      alert("Please fill in all fields before submitting.");
+      toast.error("Please fill all Mandatory Fields");
       return;
     }
-    console.log(name,email,phone,message);
     
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, phone, message }),
     });
-    console.log(res);
     
     if (res.ok) {
       toast.success("Message sent successfullty");
@@ -35,7 +33,7 @@ const ContactPage = () => {
       setPhone("");
       setMessage("");
     } else {
-      alert("Failed to send.");
+      toast.error("Failed to sent Message ");
     }
   };
   
@@ -105,8 +103,8 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-lg font-semibold text-black">Emails us on </h3>
                 <p className="text-sm text-gray-600 flex flex-col gap-x-2 xl:flex-row lg:flex-row md:flex-col sm:flex-row ">
-                  <a href="mailto:info@wahatsiwa.in" className="hover:underline block ">info@wahatsiwa.in,</a>
-                  <a href="mailto:wahatliwantechllc@gmail.com" className="hover:underline block ">wahatliwantechllc@gmail.com</a></p>
+                  <a href="mailto:info@wahatsiwa.in" className="hover:underline block ">info@wahat.com,</a>
+                  <a href="mailto:wahatliwantechllc@gmail.com" className="hover:underline block ">infowahat@gmail.com</a></p>
               </div>
             </div>
           </div>
@@ -123,7 +121,7 @@ const ContactPage = () => {
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label className="block text-xl font-medium text-gray-700 pb-2">
-                Full Name
+                Full Name*
               </label>
               <input
                 type="text"
@@ -136,7 +134,7 @@ const ContactPage = () => {
 
             <div>
               <label className="block text-xl font-medium text-gray-700 pb-2 ">
-                Email
+                Email*
               </label>
               <input
                 type="email"
@@ -149,7 +147,7 @@ const ContactPage = () => {
 
             <div>
               <label className="block text-xl font-medium text-gray-700 pb-2" >
-                Phone Number
+                Phone Number*
               </label>
               <input
                 type="tel"
@@ -163,7 +161,7 @@ const ContactPage = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 pb-2 text-xl">
-                Message
+                Message*
               </label>
               <textarea
                 rows={4}

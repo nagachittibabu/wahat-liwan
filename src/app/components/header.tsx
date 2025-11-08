@@ -90,7 +90,7 @@ const Header: React.FC = () => {
       </div>
 
       {isMobile && menuButton && (
-        <button onClick={menuClick} className="menu_button cursor-pointer pr-4">
+        <button onClick={menuClick} className="menu_button cursor-pointer pr-4 ">
           <i className="bx bx-menu"></i>
         </button>
       )}

@@ -19,7 +19,6 @@ export async function POST(req) {
       pass: process.env.EMAIL_PASS,
     },
   });
-  console.log("EMAIL_USER:", process.env.EMAIL_USER);
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
@@ -33,7 +32,7 @@ export async function POST(req) {
     await transporter.sendMail(mailOptions);
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
-    console.error("Email send error:", error);
+    console.error("Email sending failed:", error);
     return new Response(JSON.stringify({ error: "Failed to send email" }), {
       status: 500,
     });

@@ -36,7 +36,7 @@ const ServicesPage: React.FC = () => {
       <div
         ref={servicesRef}
         className="w-full flex flex-col justify-center items-center gap-20 bg-cover h-fit py-20 px-4 sm:px-6 lg:px-20 bg-center"
-        style={{ backgroundImage: `url('/service.png')` }}
+        style={{ backgroundImage: `url('/services/service-banner.png')` }}
       >
         <div className="w-full max-w-screen-xl bg-cover bg-center pt-20">
           <h1 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-center text-black mb-16">

@@ -92,17 +92,17 @@ export const projects = [
 
 export const contact = [
     {
-        'image': '/location.png',
+        'image': '/contact-us/location.png',
         'title': 'We Are Here',
         'about': 'Big Four Building Flat No: 112(1st Floor) P.O. Box: 67411, Al Nabba, Sharjah-U.A. E'
     },
     {
-        'image': '/call.png',
+        'image': '/contact-us/call.png',
         'title': 'Call Us',
         'about': '+971-556038444, +971-509754442'
     },
     {
-        'image': '/email.png',
+        'image': '/contact-us/email.png',
         'title': 'Mail Us',
         'about': 'info@wahatsiwa.in, wahatliwantechllc@gmail.com'
     }
@@ -138,7 +138,7 @@ export const services: Service[] = [
     {
         title: "Mechanical",
         about: "Specialization",
-        image: "/mechanic.png",
+        image: "/services/mechanic.png",
         points: [
             "Heating, Ventilation & Air Conditioning (HVAC) System",
             "All type of Air Conditioning System (Centralized, Wall-Mounted, Split System, CC, Ducted)",
@@ -152,7 +152,7 @@ export const services: Service[] = [
     {
         title: "Plumbing",
         about: "Specialization",
-        image: "/plumbing.png",
+        image: "/services/plumbing.png",
         points: [
             "Design & Installation of plumbing, drainage and sanitary systems",
             "Pump & Tank Installation",
@@ -167,7 +167,7 @@ export const services: Service[] = [
     {
         title: "Electrical",
         about: "Specialization",
-        image: "/electrical.png",
+        image: "/services/electrical.png",
         points: [
             "Electrical Engineering (Design & Product Selection)",
             "Installations of Electrical Panel Systems like MDBs,Panels, SMDBs, DBs / Capacitor Banks",
@@ -184,7 +184,7 @@ export const services: Service[] = [
 export const about = [
     {
         "title": "Introduction Of Wahat Liwan Tech Services LLC ",
-        "image": "/about.png",
+        "image": "/about-us/about.png",
         "para1": "Wahat Liwan Tech Services LLC  is established in 2015 at Sharjah, United Arab Emirates. Company is one of the leading MEP & Civil Contracting company in the region with a wide reputation and excellence.",
         "para2": "Timeliness, efficiency, and value-per-square-foot are the focus of WAHAT LIWAN TECH SERVICES LLC’s efforts, and we pride ourselves on offering the highest levels of service and attention to detail, keeping you updated with regular progress reports every step of the way, thereby ensuring that your project is completed on time and within budget., and value-per-square-foot are the focus of B",
         "para3": "To provide innovative and world class solutions through the best people, processes and systems with a commitment to partnership and exceptional services and we pride on offer your project is completed on time and within budget."
@@ -198,7 +198,7 @@ export const commitment = [
         "para2": "MEP shall sustain Organizational Excellence through visionary leadership and innovative efforts.",
         "about2": "Quality Assurance",
         "para3": "The Company has a Quality Management System which complies with:",
-        "image": "/commitment.png",
+        "image": "/commitment/commitment.png",
         "points": [
             "All contractual obligations, Client’s Specifications and Industry standards.",
             "All Statutory Regulations and Codes of Practice.",
