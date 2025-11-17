@@ -31,12 +31,13 @@ const CoreValueSection = () => {
 
                 <div
                     data-aos="zoom-in"
-                    data-aos-delay="200"
+                    data-aos-delay="100"
                     className="w-full flex items-center  justify-center flex-wrap space-y-4"
                 >
-                    {corevalues.map((item) => (
+                    {corevalues.map((item,i) => (
                         <div className="w-[80%] xl:w-full lg:w-full 
-                        md:w-full  sm:w-full flex items-center justify-center  h-[210px] xl:h-[150px] lg:h-[160px] md:h-[160px] sm:h-[140px] " key={item.title}>
+                        md:w-full  sm:w-full flex items-center justify-center  h-[210px] xl:h-[150px] lg:h-[160px] md:h-[160px] sm:h-[140px] " key={item.title} data-aos="fade-left"
+                        data-aos-delay={i * 100} >
                         <CoreValueCard imageurl={item.image} title={item.title} description={item.about} key={item.title} />
                         </div>
                     ))}

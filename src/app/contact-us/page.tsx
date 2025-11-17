@@ -105,8 +105,8 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-lg font-semibold text-black">Emails us on </h3>
                 <p className="text-sm text-gray-600 flex flex-col gap-x-2 xl:flex-row lg:flex-row md:flex-col sm:flex-row ">
-                  <a href="mailto:info@wahatsiwa.in" className="hover:underline block ">info@wahatsiwa.in,</a>
-                  <a href="mailto:wahatliwantechllc@gmail.com" className="hover:underline block ">wahatliwantechllc@gmail.com</a></p>
+                  <a href="mailto:info@wahatliwan.com" className="hover:underline block ">info@wahatliwan.com,</a>
+                  <a href="mailto:info@wahatliwan.com" className="hover:underline block ">info@wahatliwan.com</a></p>
               </div>
             </div>
           </div>

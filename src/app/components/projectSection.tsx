@@ -11,7 +11,7 @@ const ProjectSection = () => {
   useEffect(() => {
     Aos.init({
       offset: 200,
-      duration: 500,
+      duration: 600,
       easing: "ease-in-sine",
     });
   }, []);
@@ -22,22 +22,21 @@ const ProjectSection = () => {
       className="w-full flex flex-col items-center justify-center bg-cover bg-center h-max py-5 space-y-8 "
     >
 
-      <div className="w-[95%] flex flex-col items-center justify-center bg-cover bg-center h-max py-5 space-y-18 rounded-lg shadow-lg bg-white ">
+      <div className="w-[95%] flex flex-col items-center justify-center bg-cover bg-center h-max py-5 space-y-18 rounded-lg shadow-lg bg-white py-12">
       
         <h1
-          data-aos="zoom-in"
           className="text-2xl sm:text-2xl lg:text-4xl md:text-[3xl] text-black text-center font-bold "
         >
           We Are Specialized In Projects
         </h1>
 
         <div
-          data-aos="zoom out"
-          data-aos-delay="300"
-          className="w-full  flex flex-wrap  gap-y-14 items-center justify-center projects_sector "
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="w-full  flex flex-wrap  gap-y-14 items-center justify-center  "
         >
           {projects.map((item,i) => (
-            <div className="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-[45%] h-[420px]  flex items-center justify-center width90 " key={item.title} style={{"--delay":i} as React.CSSProperties} >
+            <div className="xl:w-1/3 lg:w-1/3 md:w-1/3 sm:w-[45%] h-[420px]  flex items-center justify-center width90 " data-aos="fade-up" data-aos-delay={i * 100} key={i}>
               <ProjectsectionCard imageurl={item.image} title={item.title} description={item.about} banner={item.banner} />
             </div>
           ))}
