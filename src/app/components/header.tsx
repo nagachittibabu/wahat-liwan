@@ -76,12 +76,12 @@ const Header: React.FC = () => {
         </div>
         <div className='slide-right h-[80%]  w-[90%] xl:w-[65%] lg:w-[75%] md:w-[75%] sm:w-[70%]   flex items-center justify-start'>
           <Link href={"/"}>
-            <div className='w-full xl:space-y-2 lg:space-y-2 md:space-1.5 sm:space-y-1'>
-              <h1 className='w-full h-[32px] xl:h-[38px] lg:h-[36px] md:h-[29px] sm:h-[20px] text-[24px] xl:text-[38px] lg:text-[36px] md:text-[27px] sm:text-[18px] font-bold  '><span className="bg-gradient-to-r from-green-500 via-green-00 to-green-600  bg-clip-text text-transparent ">
+            <div className='w-full xl:space-y-2 lg:space-y-2 md:space-y-1 sm:space-y-1'>
+              <h1 className='w-full h-[32px] xl:h-[38px] lg:h-[32px] md:h-[25px] sm:h-[20px] text-[24px] xl:text-[38px] lg:text-[32px] md:text-[25px] sm:text-[18px] font-bold'><span className="bg-gradient-to-r from-green-500 via-green-00 to-green-600  bg-clip-text text-transparent ">
                 WAHAT LIWAN
               </span></h1>
-              <h2 className='w-full text-left  xl:pl-[56px] lg:pl-[106px] md:pl-[52px] sm:pl-[48px] xl:text-[17px] 
-                  lg:text-[12px] md:text-[11px] sm:text-[6px] text-[9px] font-bold '><span className="bg-gradient-to-r from-gray-400  to-gray-400 bg-clip-text text-transparent ">
+              <h2 className='w-full text-left  xl:pl-[50px] lg:pl-[90px] md:pl-[52px] sm:pl-[48px] xl:text-[17px] 
+                  lg:text-[10px] md:text-[9px] sm:text-[6px] text-[9px] font-bold '><span className="bg-gradient-to-r from-gray-400  to-gray-400 bg-clip-text text-transparent ">
                   TECHNICAL SERVICES L.L.C
                 </span></h2>
             </div>
@@ -90,26 +90,25 @@ const Header: React.FC = () => {
       </div>
 
       {isMobile && menuButton && (
-        <button onClick={menuClick} className="menu_button cursor-pointer pr-4">
+        <button onClick={menuClick} className="menu_button cursor-pointer pr-4 ">
           <i className="bx bx-menu"></i>
         </button>
       )}
 
       {isNavVisible && (
         <nav
-          id="navbar"
-          className={`w-[65%] xl:w-[65%] lg:w-[65%] md:w-[65%] sm:w-[68%]   h-full flex justify-center items-center relative   ${slideText}`}
+          className={`w-[65%] xl:w-[65%] lg:w-[65%] md:w-[65%] sm:w-[68%]  h-full flex justify-center items-center  slide-down  ${slideText}`}
         >
           {closeBtn && (
             <div
-              className="absolute top-4 left-4 z-[999] text-white text-[22px] cursor-pointer"
+              className="absolute top-4 left-4 text-white text-[22px] cursor-pointer"
               onClick={closeNav}
             >
               &times;
             </div>
           )}
 
-          <ul className="navbar w-full h-full flex justify-end pr-2 items-center space-x-4 xl:space-x-16 lg:space-x-8 md:space-x-5 sm:space-x-3 text-white font-semibold xl:text-[13px] lg:text-[13px] md:text-[11px] sm:text-[11px]">
+          <ul className="navbar w-full h-full flex justify-end  items-center  space-x-0 xl:space-x-16 lg:space-x-8 md:space-x-4 sm:space-x-3 text-white font-semibold xl:text-[13px] lg:text-[12px] md:text-[10px] sm:text-[11px]">
             <li
               className={`h-full flex justify-center items-center  ${pathname === "/"
                   ? "text-green-300 underline underline-offset-[12px]"
