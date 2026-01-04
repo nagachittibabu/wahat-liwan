@@ -48,7 +48,7 @@ const HomeCarousel = ({ onReadMoreClick }: HomeCarouselProps)  => {
                       </div>
         ))}
       </Carousel>
-            <div className='w-full h-full absolute left-0 top-0 bg-gray-900 opacity-60 '></div>
+            <div className='w-full h-full absolute left-0 top-0 bg-gray-900 opacity-40 '></div>
             <div className='xl:w-[40%] lg:w-[41%] md:w-[50%] sm:w-[50%] h-max absolute xl:left-1/14 xl:top-[40%] lg:left-1/8 lg:top-[40%] md:left-1/8  md:top-[50%] sm:left-1/9 sm:top-[50%] text-white  text-left p-2 width75 banner_content '>
               <h1 className='xl:text-[26px] lg:text-[22px] md:text-[18px] sm:text-[14px] tracking-wider font-semibold slide-left welcomeText'>Hello,Welcome to </h1>
               <div className='slide-right h-max '>
