@@ -1,4 +1,4 @@
-'use client'
+
 import React, { useEffect, useState } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import Image from '../../../node_modules/next/image'
@@ -11,6 +11,8 @@ type HomeCarouselProps = {
 const banners = [
   '/images/banner2c.png',
   '/images/banner3c.png',
+  '/images/banner4c.png',
+  '/images/banner5c.png',
 ]
 const HomeCarousel = ({ onReadMoreClick }: HomeCarouselProps)  => {
   const SLIDE_DURATION_MS = 10000
